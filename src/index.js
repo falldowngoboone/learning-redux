@@ -1,29 +1,14 @@
-// pick up here: https://egghead.io/lessons/javascript-redux-supplying-the-initial-state
+// pick up here: https://egghead.io/lessons/javascript-redux-normalizing-the-state-shape
 
-import 'babel-polyfill';
-import React from 'react';
-import { render } from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import todoApp from './reducers';
-import App from './components/App';
+import 'babel-polyfill'
+import React from 'react'
+import { render } from 'react-dom'
+import configureStore from './configureStore'
+import Root from './components/Root'
 
-const persistedState = {
-  todos: [{
-    id: '0',
-    text: 'Welcome back!',
-    completed: false,
-  }],
-}
-const store = createStore(
-  todoApp,
-  persistedState
-);
-console.log(store.getState())
+const store = configureStore()
 
 render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <Root store={store} />,
   document.getElementById('root')
-);
+)
