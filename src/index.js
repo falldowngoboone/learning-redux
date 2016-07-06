@@ -1,4 +1,4 @@
-// pick up here: https://egghead.io/lessons/javascript-redux-normalizing-the-state-shape
+// pick up here: https://egghead.io/lessons/javascript-redux-applying-redux-middleware
 
 import 'babel-polyfill'
 import React from 'react'
