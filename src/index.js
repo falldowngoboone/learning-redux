@@ -1,4 +1,4 @@
-// pick up here: https://egghead.io/lessons/javascript-redux-applying-redux-middleware
+// pick up here: https://egghead.io/lessons/javascript-redux-dispatching-actions-asynchronously-with-thunks
 
 import 'babel-polyfill'
 import React from 'react'
