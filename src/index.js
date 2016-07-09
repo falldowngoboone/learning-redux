@@ -1,4 +1,4 @@
-// pick up here: https://egghead.io/lessons/javascript-redux-creating-data-on-the-server
+// pick up here: https://egghead.io/lessons/javascript-redux-normalizing-api-responses-with-normalizr
 
 import 'babel-polyfill'
 import React from 'react'
